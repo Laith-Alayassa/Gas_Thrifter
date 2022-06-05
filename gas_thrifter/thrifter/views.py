@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import FormView
+from django.views.generic import FormView, CreateView
 
 from .forms import GasPricesForm
 
@@ -10,7 +10,7 @@ def index(request):
 def thank_you(request):
     return render(request, 'thrifter/thank_you.html')
 
-class GasPricesFormView(FormView):
+class GasPricesFormView(CreateView):
     form_class = GasPricesForm
     template_name = "thrifter/form.html"
 

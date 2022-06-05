@@ -5,13 +5,12 @@
 {% block body %}
 
 
-<h2>this is list view</h2>
+<h2>this is list view from fucntions</h2>
 
 
-<form method = "GET">
-    {% csrf_token %}
+<form action = '{{max_price}}' method = "GET">
     <label for="price_filter">what is the price you are looking for?</label>
-    <input type="text">
+    <input type="text" name="max_price" id="max_price">
 
 
 </form>

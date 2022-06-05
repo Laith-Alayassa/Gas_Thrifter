@@ -6,5 +6,13 @@
 
 
 <p>this is from inside the template</p>
-<a href="{% url 'thrifter:create'%}"> fill form</a>
+<ul>
+    <li>
+        <a href="{% url 'thrifter:create'%}"> Submit a price?</a>
+    </li>
+
+    <li>
+        <a href="{% url 'thrifter:list_view' %}"> view prices</a>   
+    </li>
+</ul>
 {% endblock body %}

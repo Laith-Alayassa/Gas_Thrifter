@@ -40,7 +40,6 @@ INSTALLED_APPS = [
 
     # my apps
     'thrifter',
-    'location_field.apps.DefaultConfig',
 ]
 
 MIDDLEWARE = [

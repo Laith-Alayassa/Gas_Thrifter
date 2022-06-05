@@ -1,0 +1,33 @@
+{% extends 'thrifter/base.html' %}
+
+
+
+{% block body %}
+
+
+<h2>this is list view</h2>
+
+
+<form method = "GET">
+    {% csrf_token %}
+    <label for="price_filter">what is the price you are looking for?</label>
+    <input type="text">
+
+
+</form>
+<ul>
+    {% for item in object_list %}
+    <li>
+        {{item}}
+    </li>
+
+    {% endfor %}
+
+</ul>
+
+
+
+
+
+
+{% endblock body %}

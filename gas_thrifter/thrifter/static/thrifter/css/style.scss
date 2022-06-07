@@ -1,0 +1,103 @@
+$primary_color: #007CFF;
+$thick_font_weight: 700;
+$accent_yellow: #FCFF00;
+
+
+
+* {
+    font-family: "Basic Sans";
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.header_container {
+    width: 1024px;
+    margin: auto;
+
+    a {
+
+        font-weight: $thick_font_weight;
+        font-size: 20.5429px;
+        line-height: 25px;
+        color: #000000;
+        text-decoration: none;
+        padding-right: 47px;
+    }
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+
+}
+
+.hero {
+    display: flex;
+    position: relative;
+
+    #hero_text {
+        flex: 1;
+        min-width: 495px;
+        font-style: normal;
+        font-weight: $thick_font_weight;
+        font-size: 96px;
+        line-height: 115px;
+        color: $primary_color;
+        margin-bottom: 0.2em;
+    }
+
+    #blue_car {
+        flex: 1;
+        left: 40px;
+        object-fit: contain;
+        text-align: right;
+    }
+}
+
+input {
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#location {
+    width: 387px;
+    font-weight: $thick_font_weight;
+    padding-left: 0.3em;
+    font-size: 31.4019px;
+    height: 1.8em;
+
+    color: #000000;
+}
+
+.bottom_blob {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#blue_blob {
+    height: 250px;
+    margin-left: 25%;
+
+}
+
+#a_submit_price {
+    position: fixed;
+    bottom: 5%;
+    margin-left: 13%;
+    font-weight: $thick_font_weight;
+    color: #FCFF00;
+    font-size: 50px;
+    max-width: 330px;    
+    color: $accent_yellow;
+}
+#a_submit_price:hover {
+    text-decoration: underline;
+
+}

@@ -1,18 +1,25 @@
 {% extends 'thrifter/base.html' %}
+{% load static %}
 
-
+<link rel="stylesheet" type="text/css" href="{% static 'thrifter/css/style.css' %}">
 
 {% block body %}
 
 
-<p>this is from inside the template</p>
-<ul>
-    <li>
-        <a href="{% url 'thrifter:create'%}"> Submit a price?</a>
-    </li>
 
-    <li>
-        <a href="{% url 'thrifter:list_view' %}"> view prices</a>   
-    </li>
-</ul>
+<div class="hero">
+    <p id="hero_text">Where are you looking to thrift?</p>
+    <img src="{% static 'thrifter/images/blue_car.png' %}" alt="blue car parking" id = 'blue_car'>
+
+</div>
+<form action="#">
+    <input type="text" name="location" id="location" placeholder = 'St.Paul'>
+</form>
+
+<div class="bottom_blob">
+    <img src="{% static 'thrifter/images/blue_blob_2.png' %}" alt="blue blob" id = 'blue_blob'>
+    <a href="{% url 'thrifter:create'%}" id='a_submit_price'> Submit a price?</a>
+</div>
+
+
 {% endblock body %}

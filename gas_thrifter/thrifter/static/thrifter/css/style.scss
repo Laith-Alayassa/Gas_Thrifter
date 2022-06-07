@@ -1,4 +1,5 @@
 $primary_color: #007CFF;
+$primary_color_2: #FF4F5A;
 $thick_font_weight: 700;
 $accent_yellow: #FCFF00;
 
@@ -12,10 +13,19 @@ a {
     text-decoration: none;
 }
 
+#red {
+    color: $primary_color_2;
+}
+
+#blue {
+    color: $primary_color
+}
 
 
 .header_container {
-    width: 1024px;
+    min-width: 1024px;
+    max-width: 75vw;
+
     margin: auto;
 
     a {
@@ -30,7 +40,8 @@ a {
 }
 
 .container {
-    width: 1024px;
+    min-width: 1024px;
+    max-width: 75vw;
     margin: auto;
 
 }
@@ -39,7 +50,7 @@ a {
     display: flex;
     position: relative;
 
-    #hero_text {
+    .hero_text {
         flex: 1;
         min-width: 495px;
         font-style: normal;
@@ -50,29 +61,36 @@ a {
         margin-bottom: 0.2em;
     }
 
-    #blue_car {
+    #blue_car,
+    #red_car {
         flex: 1;
         left: 40px;
         object-fit: contain;
-        text-align: right;
     }
 }
+
 
 input {
     background: #FFFFFF;
     border-radius: 5px;
+    width: 387px;
+    height: 63px;
     border: none;
+    font-weight: $thick_font_weight;
+    padding-left: 0.3em;
+    font-size: 29px;
+    height: 1.8em;
     filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #location {
     width: 387px;
-    font-weight: $thick_font_weight;
-    padding-left: 0.3em;
-    font-size: 31.4019px;
-    height: 1.8em;
+}
 
-    color: #000000;
+
+#create_submit_btn {
+    height: 1.2em;
+    width:  3em;
 }
 
 .bottom_blob {
@@ -94,9 +112,10 @@ input {
     font-weight: $thick_font_weight;
     color: #FCFF00;
     font-size: 50px;
-    max-width: 330px;    
+    max-width: 330px;
     color: $accent_yellow;
 }
+
 #a_submit_price:hover {
     text-decoration: underline;
 

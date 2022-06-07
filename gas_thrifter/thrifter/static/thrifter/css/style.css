@@ -6,8 +6,17 @@ a {
   text-decoration: none;
 }
 
+#red {
+  color: #FF4F5A;
+}
+
+#blue {
+  color: #007CFF;
+}
+
 .header_container {
-  width: 1024px;
+  min-width: 1024px;
+  max-width: 75vw;
   margin: auto;
 }
 
@@ -21,7 +30,8 @@ a {
 }
 
 .container {
-  width: 1024px;
+  min-width: 1024px;
+  max-width: 75vw;
   margin: auto;
 }
 
@@ -32,7 +42,7 @@ a {
   position: relative;
 }
 
-.hero #hero_text {
+.hero .hero_text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -45,31 +55,37 @@ a {
   margin-bottom: 0.2em;
 }
 
-.hero #blue_car {
+.hero #blue_car,
+.hero #red_car {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   left: 40px;
   -o-object-fit: contain;
      object-fit: contain;
-  text-align: right;
 }
 
 input {
   background: #FFFFFF;
   border-radius: 5px;
+  width: 387px;
+  height: 63px;
   border: none;
+  font-weight: 700;
+  padding-left: 0.3em;
+  font-size: 29px;
+  height: 1.8em;
   -webkit-filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #location {
   width: 387px;
-  font-weight: 700;
-  padding-left: 0.3em;
-  font-size: 31.4019px;
-  height: 1.8em;
-  color: #000000;
+}
+
+#create_submit_btn {
+  height: 1.2em;
+  width: 3em;
 }
 
 .bottom_blob {

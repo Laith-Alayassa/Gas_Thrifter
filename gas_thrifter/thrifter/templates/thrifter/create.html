@@ -1,14 +1,22 @@
 {% extends 'thrifter/base.html' %}
-
+{% load static %}
 
 
 {% block body %}
 
+<div class="hero">
+    <p id="red" class="hero_text">Where do you see the price?</p>
+    <img src="{% static  'thrifter/images/red_car.png' %}" alt="red car parking" id='red_car'>
+</div>
+
 <form method="post">
     {% csrf_token %}
     {{form.as_p}}
-    <input type="submit" value="submit">
-
+    <input type="submit" value="submit" id = 'create_submit_btn'>
 </form>
+
+<div class="bottom_blob">
+    <img src="{% static 'thrifter/images/red_blob_2.png' %}" alt="red blob" id = 'red_blob'>
+</div>
 
 {% endblock body %}

@@ -9,14 +9,12 @@
     <img src="{% static  'thrifter/images/red_car.png' %}" alt="red car parking" id='red_car'>
 </div>
 
-<form method="post">
+<form method="post" id='create_form'>
     {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="submit" id = 'create_submit_btn'>
 </form>
 
-<div class="bottom_blob">
-    <img src="{% static 'thrifter/images/red_blob_2.png' %}" alt="red blob" id = 'red_blob'>
-</div>
+<img src="{% static 'thrifter/images/red_blob.png' %}" alt="red blob" id = 'red_blob'>
 
 {% endblock body %}

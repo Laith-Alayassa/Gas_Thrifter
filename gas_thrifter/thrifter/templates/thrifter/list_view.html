@@ -9,12 +9,12 @@
 
 
 <form  method = "GET">
-    <label for="price_filter">what is the price you are looking for?</label>
+    <label for="price_filter" id='price_question'>what is the price you are looking for?</label>
     <input type="text" name="max_price" id="max_price">
 
-    <label for="city">What city are you in?</label>
-    <input type="text" name = 'city' id='city'>
-    <input type="submit" value="submit">
+    {% comment %} <label for="city" id='city_question'>What city are you in?</label> {% endcomment %}
+    {% comment %} <input type="text" name = 'city' id='city'> {% endcomment %}
+    <input type="submit" value="submit" id = 'submit_list'>
 
 </form>
 <ul>

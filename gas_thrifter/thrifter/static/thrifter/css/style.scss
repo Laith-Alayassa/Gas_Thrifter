@@ -89,8 +89,7 @@ input {
 
 
 #create_submit_btn {
-    height: 1.2em;
-    width:  3em;
+    height: 5em;
 }
 
 .bottom_blob {
@@ -105,6 +104,10 @@ input {
 
 }
 
+#red_blob {
+    position: absolute;
+    right: 0;
+}
 #a_submit_price {
     position: fixed;
     bottom: 5%;
@@ -119,4 +122,11 @@ input {
 #a_submit_price:hover {
     text-decoration: underline;
 
+}
+
+#create_form {
+    label {
+        margin: 5px;
+    }
+    
 }

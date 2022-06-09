@@ -18,13 +18,16 @@
         <a href="{% url 'thrifter:list_view'%}">Thrift</a>
         <a href="{% url 'thrifter:create'%}">Submit</a>
 
-        
         {% if user.is_authenticated %}
-            <a href="#">welcome</a>
-            {% else %}
-            <a href=" {% url 'login' %}">Login</a> 
+        <a href="{% url 'logout' %}">Logout </a>
+        Welcome {{user.get_username}}
+
+        {% else %}
+        <a href="{% url 'thrifter:signup' %}"> sign up </a>
+        <a href="{% url 'login' %}">Login</a> 
         {% endif %}
         {% comment %} TODO: add if else statements for autthentication {% endcomment %}
+        
     </div>
 </header>
 <body>

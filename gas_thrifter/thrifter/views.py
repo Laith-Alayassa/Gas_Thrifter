@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.generic import CreateView, ListView
+from django.contrib.auth.forms import UserCreationForm
 from .models import GasPrices
 
 from .forms import GasPricesForm
@@ -44,3 +45,10 @@ def list_view(request, city=''):
     return render(request, 'thrifter/list_view.html', context={
         'object_list': object_list
     })
+
+
+class signupView(CreateView):
+    form_class = UserCreationForm
+    template_name = 'registration/signup.html'
+
+    success_url = '/'

@@ -27,4 +27,4 @@ class GasPrices(models.Model):
     address = models.CharField(max_length=100, default="NA")
 
     def __str__(self):
-        return f"Price is {self.price}$ at {self.station} station in {self.city}"
+        return f"Price is {self.price}$ at {self.station} station in {self.city} at time {self.time.strftime('%d/%b/%y %-H:%M')}"

@@ -84,8 +84,7 @@ input {
 }
 
 #create_submit_btn {
-  height: 1.2em;
-  width: 3em;
+  height: 5em;
 }
 
 .bottom_blob {
@@ -97,6 +96,11 @@ input {
 #blue_blob {
   height: 250px;
   margin-left: 25%;
+}
+
+#red_blob {
+  position: absolute;
+  right: 0;
 }
 
 #a_submit_price {
@@ -112,5 +116,70 @@ input {
 
 #a_submit_price:hover {
   text-decoration: underline;
+}
+
+#create_form label {
+  margin: 5px;
+}
+
+ul {
+  padding: 0;
+}
+
+.centered_question {
+  padding-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.list_ls, button {
+  list-style: none;
+  font-weight: 700;
+  background: #FFFFFF;
+  border-radius: 5px;
+  min-height: 63px;
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  padding-top: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: none;
+  font-weight: 700;
+  font-size: 29px;
+  -webkit-filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.list_ls a, button a {
+  color: black;
+}
+
+#price_question {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: large;
+  font-size: 56.5413px;
+  line-height: 68px;
+  color: #007CFF;
+}
+
+#list_view_form input {
+  width: 20%;
+}
+
+#submit_list {
+  width: 10%;
+  margin-bottom: 1em;
+  font-size: medium;
+  color: white;
+  background-color: #007CFF;
+  font-weight: 500;
+  font-size: large;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 /*# sourceMappingURL=style.css.map */

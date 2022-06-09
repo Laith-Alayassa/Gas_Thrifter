@@ -10,3 +10,8 @@ urlpatterns = [
     path('list/', views.list_view, name = 'list_view'),
     path('thank_you', views.thank_you, name = 'thank_you')
 ]
+
+
+# TODO: create a random price generator that runs everyday and generates numbers and prices
+# TODO: create a graph over time of where are these prices
+# TODO: add google maps to all of this

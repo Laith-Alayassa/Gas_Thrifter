@@ -130,3 +130,70 @@ input {
     }
     
 }
+
+ul {
+    padding: 0;
+
+}
+
+.centered_question {
+    padding-top: 2em;
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+// TODO: make them grid of 3
+.list_ls, button {
+    list-style: none;
+
+    font-weight: $thick_font_weight;
+    background: #FFFFFF;
+    border-radius: 5px;
+
+    min-height: 63px;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-top: 20px;
+
+    height: fit-content;
+    border: none;
+    font-weight: $thick_font_weight;
+    font-size: 29px;
+    filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+    a {
+        color: black;
+    }
+}
+#price_question {
+    margin-bottom: 50px;
+    font-weight: $thick_font_weight;
+    font-size: large;
+    font-size: 56.5413px;
+    line-height: 68px;
+    color: $primary_color;
+}
+
+#list_view_form {
+    input {
+        width: 20%;
+    }
+
+
+}
+
+#submit_list {
+    width:10%;
+    margin-bottom: 1em;
+    font-size: medium;
+
+    color: white ;
+    background-color: $primary_color;
+    font-weight: 500;
+    font-size: large;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}

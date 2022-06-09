@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     # The default one takes you to the thrifter app
-    path('', include('thrifter.urls'), name = 'index')
+    path('', include('thrifter.urls'), name = 'index'),
+    path('accounts/', include('django.contrib.auth.urls')), # TODO: what is the initial path value?
 ]

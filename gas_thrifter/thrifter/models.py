@@ -17,6 +17,7 @@ class GasPrices(models.Model):
     price = models.DecimalField(max_digits=5, decimal_places=2)
     station = models.CharField(max_length=50)
     city = models.ForeignKey(Cities, on_delete=models.CASCADE, default= 9999)
+    address = models.CharField(max_length=100, default= "NA")
 
     
 

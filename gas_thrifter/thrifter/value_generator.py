@@ -1,17 +1,10 @@
-from random import random
-from .models import GasPrices
+from pprint import pprint
+from random import uniform
 
+# """ 
+# generate random values here and add them somewhere else from a file where you can import the models
+# 
+# """
 
-
-def create_random_entry():
-    pass
-
-
-""" 
-For station in stations
-    create random entry
-    store entry in list
-
-bulk add entries to the model (or add after each entry)
-
-"""
+price = round(uniform(3.5,4.5),2)
+print(price)

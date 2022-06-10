@@ -1,6 +1,6 @@
 $primary_color: #007CFF;
 $primary_color_2: #FF4F5A;
-$thick_font_weight: 700;
+$thick_font_weight: 500;
 $accent_yellow: #FCFF00;
 
 
@@ -196,4 +196,28 @@ ul {
     font-size: large;
     padding-top: 0em;
     padding-bottom: 0em;
+}
+
+
+#login_form {
+    margin-top: 5%;
+    text-align: center;
+    form {
+        display: inline-block;
+    }
+}
+
+.input-group {
+    text-align: center;
+    margin: 3em;
+    margin-top: 0;
+}
+
+#sign_up_submit {
+    background-color: $primary_color;
+    color: white;
+    width: fit-content;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
 }

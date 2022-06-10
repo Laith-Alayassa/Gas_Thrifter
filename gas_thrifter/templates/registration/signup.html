@@ -1,17 +1,33 @@
 {% extends 'thrifter/base.html' %}
-
+{% load static %}
 
 {% block body %}
 
-<div class="card">
-
-
+<div id= 'login_form'>
 
     <form method="post">
         {% csrf_token %}
-        
-        {{form}}
-        <input type="submit" value="sign up">
+
+        {{form.username.label}} 
+        <div class="input-group"> 
+            {{form.username}} 
+        </div> 
+
+        {{form.password1.label}} 
+        <div class="input-group">
+            {{form.password1}} 
+        </div> 
+        confirm passowrd
+        <div class="input-group"> 
+            {{form.password2}} 
+        </div> 
+        <div>
+            {% if password_mismatch %}
+            <p>passwords don't match</p>
+            {% endif %}
+        </div>
+
+        <input type="submit" value="sign up" id = 'sign_up_submit'>
         
         
         

@@ -1,5 +1,4 @@
-from tkinter.tix import INTEGER
-from django.http import HttpResponse
+
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.generic import CreateView, ListView

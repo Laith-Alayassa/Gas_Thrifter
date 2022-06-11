@@ -23,6 +23,6 @@
     -  class based views
     -  URLS/Paths and redirecting
     -  template/template inheritance 
- 2. SQLite
- 3. Learned more CSS and increased my knowledge about http (POST, GET, etc...)
+ 2. Creating and using Models and migrations
+ 4. Learned more CSS and increased my knowledge about http (POST, GET, etc...)
    

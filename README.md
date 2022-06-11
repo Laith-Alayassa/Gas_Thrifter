@@ -1,7 +1,11 @@
 # Gas_Thrifter
 
 [![gas thrifter thumbnail](https://user-images.githubusercontent.com/60319236/173164614-19df60d4-ac13-4dcf-a561-e1e9c60bf650.png)](https://youtu.be/w2TZ2g7wopk)
-## ☝️click thumbnail to go watch demo on YouTube ☝️
+
+<h1 align="center">
+☝️ Click Thumbnail to watch Demo on YouTube ☝️
+</h1>
+
 
 
 

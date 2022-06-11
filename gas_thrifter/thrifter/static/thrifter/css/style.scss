@@ -88,7 +88,7 @@ input, select {
 }
 
 
-#create_submit_btn {
+#create_submit_btn, #submit_login_btn {
     height: 2em;
     width: fit-content;
     margin: auto;
@@ -232,3 +232,22 @@ ul {
     display: flex;
     flex: 50%;
 }
+
+#create_form{
+
+    
+}
+    
+
+.spaced_table {
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+    
+}
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }

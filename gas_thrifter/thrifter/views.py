@@ -51,3 +51,7 @@ class signupView(CreateView):
     template_name = 'registration/signup.html'
     
     success_url = '/'
+
+def station_map(request, station):
+    a=station
+    return render(request, 'thrifter/map.html')

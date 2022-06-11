@@ -8,7 +8,8 @@ urlpatterns = [
     path('create/', GasPricesCreateView.as_view(), name = 'create'),
     path('list/', views.list_view, name = 'list_view'),
     path('thank_you', views.thank_you, name = 'thank_you'),
-    path('signup/', signupView.as_view(), name = 'signup')
+    path('signup/', signupView.as_view(), name = 'signup'),
+    path('map/<str:station>', views.station_map, name = 'station_map')
     # path('station/<num:')
 ]
 

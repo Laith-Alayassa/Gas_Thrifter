@@ -69,8 +69,7 @@ a {
     }
 }
 
-
-input {
+input, select {
     background: #FFFFFF;
     border-radius: 5px;
     width: 387px;
@@ -83,13 +82,20 @@ input {
     filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+
 #location {
     width: 387px;
 }
 
 
 #create_submit_btn {
-    height: 5em;
+    height: 2em;
+    width: fit-content;
+    margin: auto;
+    background-color: $primary_color_2;
+    color: white;
+    // margin-left: auto;
+    // margin-right: auto;
 }
 
 .bottom_blob {
@@ -220,4 +226,9 @@ ul {
     padding-left: 0.5em;
     padding-right: 0.5em;
 
+}
+
+.container_form {
+    display: flex;
+    flex: 50%;
 }

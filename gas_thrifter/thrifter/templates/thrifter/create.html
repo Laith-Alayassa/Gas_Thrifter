@@ -11,9 +11,14 @@
 
 <form method="post" id='create_form'>
     {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" value="submit" id = 'create_submit_btn'>
-</form>
+    <div class="container_form">
+
+        <table id = 'create_table'>
+            {{form.as_table}}
+        </table>
+        <input type="submit" value="submit" id = 'create_submit_btn'>
+    </form>
+</div>
 
 <img src="{% static 'thrifter/images/red_blob.png' %}" alt="red blob" id = 'red_blob'>
 

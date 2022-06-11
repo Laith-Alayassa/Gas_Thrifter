@@ -49,5 +49,5 @@ def list_view(request, city=''):
 class signupView(CreateView):
     form_class = UserCreationForm
     template_name = 'registration/signup.html'
-
+    
     success_url = '/'

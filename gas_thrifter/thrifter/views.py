@@ -1,9 +1,13 @@
 
+from multiprocessing import context
+from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.generic import CreateView, ListView
 from django.contrib.auth.forms import UserCreationForm
 from .models import GasPrices
+from django.contrib.auth import login
+
 
 from .forms import GasPricesForm
 
@@ -14,8 +18,14 @@ def index(request):
         city = request.POST.get('location')
         return redirect('thrifter:list_view', city=city)
     else:
-        return render(request, 'thrifter/index.html')
-
+        if request.user.is_authenticated:    
+            return render(request, 'thrifter/index.html', context= {
+                'authenticated' : True
+            })
+        else:
+            return render(request, 'thrifter/index.html', context= {
+                'authenticated' : False
+            })
 
 def thank_you(request):
     return render(request, 'thrifter/thank_you.html')
@@ -46,12 +56,35 @@ def list_view(request, city=''):
     })
 
 
-class signupView(CreateView):
-    form_class = UserCreationForm
-    template_name = 'registration/signup.html'
+# class signupView(CreateView):
+#     # form_class = UserCreationForm
+
+
+#     form_class = NewUserForm
+#     template_name = 'registration/signup.html'
     
-    success_url = '/'
+#     success_url = '/'
+
+
+
 
 def station_map(request, station):
     a=station
     return render(request, 'thrifter/map.html')
+
+
+
+def register(request):
+    if request.POST:
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            # login(request,)
+        else:
+            return render(request, 'registration/signup.html', context = {'form' : form})
+
+    form = UserCreationForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'registration/signup.html', context = context)

@@ -9,13 +9,21 @@
 
 
 
-<form action="#" method="post">
-    {% csrf_token %}
-    {{form}}
-    {{form.errors}}
-    <input type="submit" value="submit">
-</form>
+    <form method="post">
+        {% csrf_token %}
+        {{form.username.label}}
+        {{form.username}}
+        
+        {{form.password1.label}}
+        {{form.password1}}
+        
+        {{form.password2.label}}
+        {{form.password2}}
+        
+        
+        {{form.errors}}
+        <input type="submit" value="submit">
+    </form>
+    
 
-
-</div>
 {% endblock body %}
